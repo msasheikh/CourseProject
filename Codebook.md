@@ -26,8 +26,8 @@ SUMMARY:  Data were taken from data sets which estimated signals from 6 differen
 
 EXTENT OF COLLECTION:  8 data files<br />
      documentation (text)<br />
-|:File                |:Obj        :|Var      :|<br />
-|:activity_labels     |:6	   :| 2       :|<br />
+|File                 |Obj        |Var      |<br />
+|activity_labels      |6	   | 2      |<br />
 |features	      | 561	    | 1	       |<br />
 |subject_test 	      | 2947   	    | 1        |<br />
 |subject_train	      | 7352  	    | 1	       |<br />
@@ -46,25 +46,24 @@ EXTENT OF DATA TRANSFORMATION:
 *	Reshaped Data using Melt and Dcast Functions<br />
  
 CODEBOOK                                                                                
-| Variable Name     | Position   | Values or Explanation                               |
-|:------------------|:----------:|----------------------------------------------------:|
-| Subject           | 1          | Participants assigned generic numbers from 1 to 30  |
-| Activity_Label    | 2          | Laying                                              |
-|                   |            | Sitting                                             |
-|                   |            | Standing                                            |
-|                   |            | Walking                                             |
-|                   |            | Walking_Downstairs                                  |
-|                   |            | Walking_Upstairs                                    |
-| Activity_ID       | 3          | 6: Laying                                           |
-|                   |            | 4: Sitting                                          |
-|                   |            | 5: Standing                                         |
-|                   |            | 1: Walking                                          |
-|                   |            | 3:Walking_Downstairs                                |
-|                   |            | 2: Walking_Upstairs                                 |
-| tBodyAcc-mean()-X | 4          | mean values for x axial signal                      |
-| tBodyAcc-mean()-Y | 5          | mean values for y axial signal                      |
-| tBodyAcc-mean()-Z | 6          | mean values for z axial signal                      |
-| tBodyAcc-std()-X  | 7          | Standard Deviation values for x axial signal        |
-| tBodyAcc-std()-Y  | 8          | Standard Deviation values for y axial signal        |
-| tBodyAcc-std()-Z  | 9          | Standard Deviation values for z axial signal        |
+| Variable Name     | Position   | Values or Explanation                               |<br />
+| Subject           | 1          | Participants assigned generic numbers from 1 to 30  |<br />
+| Activity_Label    | 2          | Laying                                              |<br />
+|                   |            | Sitting                                             |<br />
+|                   |            | Standing                                            |<br />
+|                   |            | Walking                                             |<br />
+|                   |            | Walking_Downstairs                                  |<br />
+|                   |            | Walking_Upstairs                                    |<br />
+| Activity_ID       | 3          | 6: Laying                                           |<br />
+|                   |            | 4: Sitting                                          |<br />
+|                   |            | 5: Standing                                         |<br />
+|                   |            | 1: Walking                                          |<br />
+|                   |            | 3:Walking_Downstairs                                |<br />
+|                   |            | 2: Walking_Upstairs                                 |<br />
+| tBodyAcc-mean()-X | 4          | mean values for x axial signal                      |<br />
+| tBodyAcc-mean()-Y | 5          | mean values for y axial signal                      |<br />
+| tBodyAcc-mean()-Z | 6          | mean values for z axial signal                      |<br />
+| tBodyAcc-std()-X  | 7          | Standard Deviation values for x axial signal        |<br />
+| tBodyAcc-std()-Y  | 8          | Standard Deviation values for y axial signal        |<br />
+| tBodyAcc-std()-Z  | 9          | Standard Deviation values for z axial signal        |<br />
 
