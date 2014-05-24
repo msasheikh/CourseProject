@@ -26,14 +26,16 @@ SUMMARY:  Data were taken from data sets which estimated signals from 6 differen
 
 EXTENT OF COLLECTION:  8 data files<br />
      documentation (text)<br />
-File 1:activity_labels		Obj: 6		Var: 2	<br />			
-File 2:features			Obj: 561	Var: 1<br />	
-File 3: subject_test 		Obj: 2947   	Var: 1	<br />
-File 4: subject_train		Obj: 7352  	Var: 1<br />			
-File 5: X_test			Obj: 2947   	Var: 561<br />			
-File 6: X_train			Obj: 7352   	Var: 561<br />			
-File 7: y_test			Obj: 2947    	Var: 1	<br />			
-File 8: y_train			Obj: 7352    	Var: 1<br />
+|File                 |Obj          |Var       |
+|---------------------|:-----------:|---------:|
+|activity_labels      | 6	    | 2        |				
+|features	      | 561	    | 1	       |
+|subject_test 	      | 2947   	    | 1        |
+|subject_train	      | 7352  	    | 1	       |		
+|X_test		      | 2947   	    | 561      |			
+|X_train	      | 7352   	    | 561      |			
+|y_test		      | 2947        | 1	       |			
+|y_train	      | 7352        | 1        |
                                               
 EXTENT OF DATA TRANSFORMATION:  
 *	Loaded and Prepared All Files <br />
@@ -45,25 +47,25 @@ EXTENT OF DATA TRANSFORMATION:
 *	Reshaped Data using Melt and Dcast Functions<br />
  
 CODEBOOK                                                                                
-| Variable Name     | Position | Values or Explanation                              
-|-------------------|----------|----------------------------------------------------|<br />
-| Subject           | 1        | Participants assigned generic numbers from 1 to 30 |<br />
-| Activity_Label    | 2        | Laying                                             |<br />
-|                   |          | Sitting                                            |<br />
-|                   |          | Standing                                           |<br />
-|                   |          | Walking                                            |<br />
-|                   |          | Walking_Downstairs                                 |<br />
-|                   |          | Walking_Upstairs                                   |<br />
-| Activity_ID       | 3        | 6: Laying                                          |<br />
-|                   |          | 4: Sitting                                         |<br />
-|                   |          | 5: Standing                                        |<br />
-|                   |          | 1: Walking                                         |<br />
-|                   |          | 3:Walking_Downstairs                               |<br />
-|                   |          | 2: Walking_Upstairs                                |<br />
-| tBodyAcc-mean()-X | 4        | mean values for x axial signal                     |<br />
-| tBodyAcc-mean()-Y | 5        | mean values for y axial signal                     |<br />
-| tBodyAcc-mean()-Z | 6        | mean values for z axial signal                     |<br />
-| tBodyAcc-std()-X  | 7        | Standard Deviation values for x axial signal       |<br />
-| tBodyAcc-std()-Y  | 8        | Standard Deviation values for y axial signal       |<br />
-| tBodyAcc-std()-Z  | 9        | Standard Deviation values for z axial signal       |<br />
+| Variable Name     | Position   | Values or Explanation                               |
+|-------------------|:----------:|----------------------------------------------------:|
+| Subject           | 1          | Participants assigned generic numbers from 1 to 30  |
+| Activity_Label    | 2          | Laying                                              |
+|                   |            | Sitting                                             |
+|                   |            | Standing                                            |
+|                   |            | Walking                                             |
+|                   |            | Walking_Downstairs                                  |
+|                   |            | Walking_Upstairs                                    |
+| Activity_ID       | 3          | 6: Laying                                           |
+|                   |            | 4: Sitting                                          |
+|                   |            | 5: Standing                                         |
+|                   |            | 1: Walking                                          |
+|                   |            | 3:Walking_Downstairs                                |
+|                   |            | 2: Walking_Upstairs                                 |
+| tBodyAcc-mean()-X | 4          | mean values for x axial signal                      |
+| tBodyAcc-mean()-Y | 5          | mean values for y axial signal                      |
+| tBodyAcc-mean()-Z | 6          | mean values for z axial signal                      |
+| tBodyAcc-std()-X  | 7          | Standard Deviation values for x axial signal        |
+| tBodyAcc-std()-Y  | 8          | Standard Deviation values for y axial signal        |
+| tBodyAcc-std()-Z  | 9          | Standard Deviation values for z axial signal        |
 
