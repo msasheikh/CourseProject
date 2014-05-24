@@ -26,16 +26,16 @@ SUMMARY:  Data were taken from data sets which estimated signals from 6 differen
 
 EXTENT OF COLLECTION:  8 data files<br />
      documentation (text)<br />
-|File                 |Obj          |Var       |
-|:--------------------|:-----------:|---------:|
-|activity_labels      | 6	    | 2        |
-|features	      | 561	    | 1	       |
-|subject_test 	      | 2947   	    | 1        |
-|subject_train	      | 7352  	    | 1	       |
-|X_test		      | 2947   	    | 561      |
-|X_train	      | 7352   	    | 561      |
-|y_test		      | 2947        | 1	       |
-|y_train	      | 7352        | 1        |
+|File                 |Obj          |Var       | <br />
+
+|activity_labels      | 6	    | 2        |<br />
+|features	      | 561	    | 1	       |<br />
+|subject_test 	      | 2947   	    | 1        |<br />
+|subject_train	      | 7352  	    | 1	       |<br />
+|X_test		      | 2947   	    | 561      |<br />
+|X_train	      | 7352   	    | 561      |<br />
+|y_test		      | 2947        | 1	       |<br />
+|y_train	      | 7352        | 1        |<br />
                                               
 EXTENT OF DATA TRANSFORMATION:  
 *	Loaded and Prepared All Files <br />
