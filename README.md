@@ -2,7 +2,6 @@ CourseProject
 =============
 
 JHU Data Science Course Project - Getting and Cleaning Data
-<<<<<<< HEAD
 
 ###Loading and Preparing Files 
 trainx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt" <br />
