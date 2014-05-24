@@ -48,8 +48,8 @@ dataCombined<-cbind(dataMergeSub, dataMergeY, dataMergeX) 			#combines all merge
 dataTogether<-merge(AL,dataCombined, by ="Activity_ID", all.x = T) 		#merges to assign labels<br />
 
 ###Reshaping Data
-install.packages(reshape2)</p>
-library(reshape2)</p>
+install.packages(reshape2)<br />
+library(reshape2)<br />
 tidy<-dataTogether[,1:9] 							# subset of data for activity, subject, mean, and SD (first 9 columns)<br />
 dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))			# creates longer table<br />
 tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean) #TIDY DATA<br />
