@@ -39,13 +39,13 @@ File 7:   	y_test				File 8:   	y_train
 Obj: 2947    	Var: 1				Obj: 7352    	Var: 1
                                               
 EXTENT OF DATA TRANSFORMATION:  
-•	Loaded and Prepared All Files 
-•	Merged Datasets for Train and Test
-•	Assigned Column Names
-•	Combining Merged Sets into a Block Dataset
-•	Added Activity Label Column to Block Dataset
-•	Subsetted the Data – Mean and Standard Deviation Values
-•	Reshaped Data using Melt and Dcast Functions
+*	Loaded and Prepared All Files 
+*	Merged Datasets for Train and Test
+*	Assigned Column Names
+*	Combining Merged Sets into a Block Dataset
+*	Added Activity Label Column to Block Dataset
+*	Subsetted the Data – Mean and Standard Deviation Values
+*	Reshaped Data using Melt and Dcast Functions
  
 CODEBOOK                                                                                
 Variable Name		Position	Values or Explanation

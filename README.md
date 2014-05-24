@@ -4,55 +4,52 @@ CourseProject
 JHU Data Science Course Project - Getting and Cleaning Data
 <<<<<<< HEAD
 
-##Loading and Preparing Files 
-trainx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt"
-RX<-read.table(trainx, sep = "", header = F) 					#load file X_train
+###Loading and Preparing Files 
+<p>trainx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt" </p>
+<p>RX<-read.table(trainx, sep = "", header = F) 					#load file X_train </p>
 
-trainy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt"
-RY<-read.table(trainy, sep = "", header = F) 					#load file y_train
+<p>trainy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt"
+<p>RY<-read.table(trainy, sep = "", header = F) 					#load file y_train </p>
 
-testx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt"
-TX<-read.table(testx, sep = "", header = F) 					#load file X_test
+<p>testx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt"
+<p>TX<-read.table(testx, sep = "", header = F) 					#load file X_test </p>
 
-testy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt"
-TY<-read.table(testy, sep = "", header = F) 					#load file y_test
+<p>testy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt"
+<p>TY<-read.table(testy, sep = "", header = F) 					#load file y_test </p>
 
-Act<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt"
-AL<-read.table(Act, sep = "", header = F) 					#load file Activity_labels
+<p>Act<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt"
+<p>AL<-read.table(Act, sep = "", header = F) 					#load file Activity_labels </p>
 
-Fea<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt"
-fea<-read.table(Fea, sep = "", header = FALSE) 					#load file features
+<p>Fea<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt"
+<p>fea<-read.table(Fea, sep = "", header = FALSE) 					#load file features </p>
 
-subjectR<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt"
-subR<-read.table(subjectR, sep = "", header = F) 				#load file subject_train
+<p>subjectR<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt"
+<p>subR<-read.table(subjectR, sep = "", header = F) 				#load file subject_train </p>
 
-subjectT<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt"
-subT<-read.table(subjectT, sep = "", header = F) 				#load file subject_test
+<p>subjectT<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt"
+subT<-read.table(subjectT, sep = "", header = F) 				#load file subject_test </p>
 
-#Merging Datasets
-dataMergeX<-rbind(RX,TX) 							# merges two training sets (train and test)
-dataMergeY<-rbind(RY,TY) 							# merges two training labels (train and test)
-dataMergeSub<-rbind(subR,subT) 							# merges two subject lists (train and test)
+###Merging Datasets
+<p>dataMergeX<-rbind(RX,TX) 							# merges two training sets (train and test)</p>
+<p>dataMergeY<-rbind(RY,TY) 							# merges two training labels (train and test)</p>
+<p>dataMergeSub<-rbind(subR,subT) 						# merges two subject lists (train and test)</p>
 
-#Assigning Column Names
-features<-subset(fea, select=-V1) 						#takes out the number column, leaving only the description column
-names(dataMergeX)<-features[1:561,] 						#assigns merges block of data column names from features file
-names(dataMergeY)<-"Activity_ID" 						#assigns a column name for activities
-names(dataMergeSub)<-"Subject" 							#assigns a column name for participants as Subject 
-names(AL)<-c("Activity_ID", "Activity_Label") 					#assigns column names to the columns in activities_label.txt file
+###Assigning Column Names
+<p>features<-subset(fea, select=-V1) 						#takes out the number column, leaving only the description column</p>
+<p>names(dataMergeX)<-features[1:561,] 						#assigns merges block of data column names from features file</p>
+<p>names(dataMergeY)<-"Activity_ID" 						#assigns a column name for activities</p>
+<p>names(dataMergeSub)<-"Subject" 						#assigns a column name for participants as Subject </p>
+<p>names(AL)<-c("Activity_ID", "Activity_Label") 				#assigns column names to the columns in activities_label.txt file</p>
 
-#Combining Merged Sets
-dataCombined<-cbind(dataMergeSub, dataMergeY, dataMergeX) 			#combines all merged datasets
+###Combining Merged Sets
+<p>dataCombined<-cbind(dataMergeSub, dataMergeY, dataMergeX) 			#combines all merged datasets</p>
 
-#Labels
-dataTogether<-merge(AL,dataCombined, by ="Activity_ID", all.x = T) 		#merges to assign labels
+###Labels
+<p>dataTogether<-merge(AL,dataCombined, by ="Activity_ID", all.x = T) 		#merges to assign labels</p>
 
-#Reshaping Data
-install.packages(reshape2)
-library(reshape2)
-tidy<-dataTogether[,1:9] 							# subset of data for activity, subject, mean, and SD (first 9 columns)
-dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))				# creates longer table
-tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean) #TIDY DATA
-
-=======
->>>>>>> 80391eafd51a08293ecba1f14efe35190d95bf25
+###Reshaping Data
+<p>install.packages(reshape2)</p>
+<p>library(reshape2)</p>
+<p>tidy<-dataTogether[,1:9] 							# subset of data for activity, subject, mean, and SD (first 9 columns)</p>
+<p>dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))			# creates longer table</p>
+<p>tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean) #TIDY DATA</p>
