@@ -1,29 +1,29 @@
-setwd("C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset")
+setwd("C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/")
 
 ##Loading and Preparing Files
 
-trainx<-"train/X_train.txt"
+trainx<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt"
 RX<-read.table(trainx, sep = "", header = F) #load file X_train
 
-trainy<-"train/y_train.txt"
+trainy<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt"
 RY<-read.table(trainy, sep = "", header = F) #load file y_train
 
-testx<-"test/X_test.txt"
+testx<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt"
 TX<-read.table(testx, sep = "", header = F) #load file X_test
 
-testy<-"test/y_test.txt"
+testy<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt"
 TY<-read.table(testy, sep = "", header = F) #load file y_test
 
-Act<-"activity_labels.txt"
+Act<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt"
 AL<-read.table(Act, sep = "", header = F) #load file Activity_labels
 
-Fea<-"features.txt"
+Fea<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt"
 fea<-read.table(Fea, sep = "", header = FALSE) #load file features
 
-subjectR<-"train/subject_train.txt"
+subjectR<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt"
 subR<-read.table(subjectR, sep = "", header = F) #load file subject_train
 
-subjectT<-"test/subject_test.txt"
+subjectT<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt"
 subT<-read.table(subjectT, sep = "", header = F) #load file subject_test
 
 #Merging Datasets
