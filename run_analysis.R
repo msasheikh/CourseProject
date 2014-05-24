@@ -50,3 +50,6 @@ library(reshape2)
 tidy<-dataTogether[,1:9]
 dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))
 tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean)
+
+#Produce Dataset
+write.table(tidyData, "tidyData.txt")
