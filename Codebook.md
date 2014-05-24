@@ -1,6 +1,6 @@
 #DESCRIPTORS AND MEASUREMENTS OF HUMAN ACITIVTY USING SMARTPHONES
                                                                                 
-##Principal Investigator<br />
+##PRINCIPAL INVESTIGATOR<br />
 Sofiyan Sheikh<br />
 Johns Hopkins University Carey Business School<br />
 100 International Dr.<br />
@@ -25,7 +25,6 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 SUMMARY:  Data were taken from data sets which estimated signals from 6 different activities of 30 individuals between the ages of 19 and 48.Variables in the tidy dataset include Subject as each participant, Activity_Label to describe different actions of participants, and means and standard deviations of the three signals – gravity, acceleration, jerk. <br />
 
 ##EXTENT OF COLLECTION:  8 data files<br />
-     documentation (text)<br />
 ###|File                 |Obj        |Var      |<br />
 |activity_labels      |6	   | 2      |<br />
 |features	      | 561	    | 1	       |<br />

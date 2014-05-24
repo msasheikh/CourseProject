@@ -3,30 +3,33 @@ CourseProject
 
 JHU Data Science Course Project - Getting and Cleaning Data
 
-###Loading and Preparing Files 
-trainx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt" <br />
-RX<-read.table(trainx, sep = "", header = F) 					#load file X_train <br />
+setwd("C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset") #sets working directory <br />
 
-trainy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt" <br />
-RY<-read.table(trainy, sep = "", header = F) 					#load file y_train <br />
+##Loading and Preparing Files
 
-testx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt" <br />
-TX<-read.table(testx, sep = "", header = F) 					#load file X_test <br />
+trainx<-"train/X_train.txt"
+RX<-read.table(trainx, sep = "", header = F) #load file X_train<br />
 
-testy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt" <br />
-TY<-read.table(testy, sep = "", header = F) 					#load file y_test <br />
+trainy<-"train/y_train.txt"
+RY<-read.table(trainy, sep = "", header = F) #load file y_train<br />
 
-Act<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt" <br />
-AL<-read.table(Act, sep = "", header = F) 					#load file Activity_labels <br />
+testx<-"test/X_test.txt"
+TX<-read.table(testx, sep = "", header = F) #load file X_test<br />
 
-Fea<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt" <br />
-fea<-read.table(Fea, sep = "", header = FALSE) 					#load file features <br />
+testy<-"test/y_test.txt"
+TY<-read.table(testy, sep = "", header = F) #load file y_test<br />
 
-subjectR<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt" <br />
-subR<-read.table(subjectR, sep = "", header = F) 				#load file subject_train <br />
+Act<-"activity_labels.txt"
+AL<-read.table(Act, sep = "", header = F) #load file Activity_labels<br />
 
-subjectT<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt" <br />
-subT<-read.table(subjectT, sep = "", header = F) 				#load file subject_test <br />
+Fea<-"features.txt"
+fea<-read.table(Fea, sep = "", header = FALSE) #load file features<br />
+
+subjectR<-"train/subject_train.txt"<br />
+subR<-read.table(subjectR, sep = "", header = F) #load file subject_train<br />
+
+subjectT<-"test/subject_test.txt"<br />
+subT<-read.table(subjectT, sep = "", header = F) #load file subject_test<br />
 
 ###Merging Datasets
 dataMergeX<-rbind(RX,TX) 							# merges two training sets (train and test)<br />
