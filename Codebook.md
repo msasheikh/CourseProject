@@ -26,9 +26,8 @@ SUMMARY:  Data were taken from data sets which estimated signals from 6 differen
 
 EXTENT OF COLLECTION:  8 data files<br />
      documentation (text)<br />
-|File                 |Obj          |Var       | <br />
-
-|activity_labels      | 6	    | 2        |<br />
+|:File                |:Obj        :|Var      :|<br />
+|:activity_labels     |:6	   :| 2       :|<br />
 |features	      | 561	    | 1	       |<br />
 |subject_test 	      | 2947   	    | 1        |<br />
 |subject_train	      | 7352  	    | 1	       |<br />
