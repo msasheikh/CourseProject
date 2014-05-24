@@ -46,24 +46,41 @@ EXTENT OF DATA TRANSFORMATION:
 *	Reshaped Data using Melt and Dcast Functions<br />
  
 CODEBOOK                                                                                
-| Variable Name     | Position   | Values or Explanation                               |<br />
-| Subject           | 1          | Participants assigned generic numbers from 1 to 30  |<br />
-| Activity_Label    | 2          | Laying                                              |<br />
-|                   |            | Sitting                                             |<br />
-|                   |            | Standing                                            |<br />
-|                   |            | Walking                                             |<br />
-|                   |            | Walking_Downstairs                                  |<br />
-|                   |            | Walking_Upstairs                                    |<br />
-| Activity_ID       | 3          | 6: Laying                                           |<br />
-|                   |            | 4: Sitting                                          |<br />
-|                   |            | 5: Standing                                         |<br />
-|                   |            | 1: Walking                                          |<br />
-|                   |            | 3:Walking_Downstairs                                |<br />
-|                   |            | 2: Walking_Upstairs                                 |<br />
-| tBodyAcc-mean()-X | 4          | mean values for x axial signal                      |<br />
-| tBodyAcc-mean()-Y | 5          | mean values for y axial signal                      |<br />
-| tBodyAcc-mean()-Z | 6          | mean values for z axial signal                      |<br />
-| tBodyAcc-std()-X  | 7          | Standard Deviation values for x axial signal        |<br />
-| tBodyAcc-std()-Y  | 8          | Standard Deviation values for y axial signal        |<br />
-| tBodyAcc-std()-Z  | 9          | Standard Deviation values for z axial signal        |<br />
+                               
+Subject [1] <br />
+Participants assigned generic numbers from 1 to 30 <br />
+
+Activity_Label [2]   <br />      
+Laying             <br />                                 
+Sitting                                             <br />
+Standing                                            <br />
+Walking                                             <br />
+Walking_Downstairs                                  <br />
+Walking_Upstairs                                    <br />
+
+Activity_ID [3]       <br />
+6: Laying                                           <br />
+4: Sitting                                          <br />
+5: Standing                                         <br />
+1: Walking                                          <br />
+3:Walking_Downstairs                                <br />
+2: Walking_Upstairs                                 <br />
+
+tBodyAcc-mean()-X [4]         <br />
+mean values for x axial signal                      <br />
+
+tBodyAcc-mean()-Y [5]         <br />
+mean values for y axial signal                      <br />
+
+tBodyAcc-mean()-Z [6]          <br />
+mean values for z axial signal                      <br />
+
+tBodyAcc-std()-X  [7]          <br />
+Standard Deviation values for x axial signal        <br />
+
+tBodyAcc-std()-Y  [8]          <br />
+Standard Deviation values for y axial signal        <br />
+
+tBodyAcc-std()-Z  [9]          <br />
+Standard Deviation values for z axial signal        <br />
 
