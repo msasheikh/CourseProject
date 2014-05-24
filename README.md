@@ -3,9 +3,8 @@ CourseProject
 
 JHU Data Science Course Project - Getting and Cleaning Data
 
-setwd("C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/")<br />
-
 ##Loading and Preparing Files
+setwd("C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/")<br />
 
 trainx<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt"<br />
 RX<-read.table(trainx, sep = "", header = F) #load file X_train<br />
@@ -56,5 +55,5 @@ tidy<-dataTogether[,1:9] 							# subset of data for activity, subject, mean, an
 dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))				# creates longer table<br />
 tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean) #TIDY DATA<br />
 
-#Produce Dataset
+###Produce Dataset
 write.table(tidyData, "tidyData.txt")						# exports dataset as a text file
