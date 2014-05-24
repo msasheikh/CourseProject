@@ -1,12 +1,6 @@
-CourseProject
-=============
-
-JHU Data Science Course Project - Getting and Cleaning Data
-<<<<<<< HEAD
-
 ##Loading and Preparing Files 
 trainx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt"
-RX<-read.table(trainx, sep = "", header = F) 					#load file X_train
+RX<-read.table(trainx, sep = "", header = F)   				#load file X_train
 
 trainy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt"
 RY<-read.table(trainy, sep = "", header = F) 					#load file y_train
@@ -54,5 +48,3 @@ tidy<-dataTogether[,1:9] 							# subset of data for activity, subject, mean, an
 dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))				# creates longer table
 tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean) #TIDY DATA
 
-=======
->>>>>>> 80391eafd51a08293ecba1f14efe35190d95bf25
