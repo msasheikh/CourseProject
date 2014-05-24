@@ -5,7 +5,7 @@ JHU Data Science Course Project - Getting and Cleaning Data
 <<<<<<< HEAD
 
 ###Loading and Preparing Files 
-<p>trainx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt" </p>
+trainx<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt" <br />
 <p>RX<-read.table(trainx, sep = "", header = F) 					#load file X_train </p>
 
 <p>trainy<-"C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt"
