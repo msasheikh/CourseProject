@@ -27,7 +27,7 @@ SUMMARY:  Data were taken from data sets which estimated signals from 6 differen
 EXTENT OF COLLECTION:  8 data files<br />
      documentation (text)<br />
 |File                 |Obj          |Var       |
-|---------------------|:-----------:|---------:|
+|:--------------------|:-----------:|---------:|
 |activity_labels      | 6	    | 2        |				
 |features	      | 561	    | 1	       |
 |subject_test 	      | 2947   	    | 1        |
@@ -48,7 +48,7 @@ EXTENT OF DATA TRANSFORMATION:
  
 CODEBOOK                                                                                
 | Variable Name     | Position   | Values or Explanation                               |
-|-------------------|:----------:|----------------------------------------------------:|
+|:------------------|:----------:|----------------------------------------------------:|
 | Subject           | 1          | Participants assigned generic numbers from 1 to 30  |
 | Activity_Label    | 2          | Laying                                              |
 |                   |            | Sitting                                             |
