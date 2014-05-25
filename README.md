@@ -2,8 +2,9 @@ CourseProject
 =============
 JHU Data Science Course Project - Getting and Cleaning Data
 
-This file breaks down code into three steps: extract, transform, and compile. Additionally, each code line is accompanied by a text, describing the purpose of the code.
-###Loading and Preparing Files
+This file breaks down code into three steps: extract, transform, and compile. Additionally, each code line is accompanied by text which describes the purpose of the code.
+###Extract
+LOAD AND PREPARE FILES
 setwd("C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/")<br />
 
 trainx<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt"<br />
@@ -29,27 +30,29 @@ subR<-read.table(subjectR, sep = "", header = F) #load file subject_train<br />
 
 subjectT<-"getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt"<br />
 subT<-read.table(subjectT, sep = "", header = F) #load file subject_test<br />
-###Merging Datasets
+###Transform
+MERGING DATASETS
 dataMergeX<-rbind(RX,TX) 							# merges two training sets (train and test)<br />
 dataMergeY<-rbind(RY,TY) 							# merges two training labels (train and test)<br />
 dataMergeSub<-rbind(subR,subT) 							# merges two subject lists (train and test)<br />
-###Assigning Column Names
+ASSIGN COLUMN NAMES
 features<-subset(fea, select=-V1) 						#takes out the number column, leaving only the description column<br />
 names(dataMergeX)<-features[1:561,] 						#assigns merges block of data column names from features file<br />
 names(dataMergeY)<-"Activity_ID" 						#assigns a column name for activities<br />
 names(dataMergeSub)<-"Subject" 							#assigns a column name for participants as Subject <br />
 names(AL)<-c("Activity_ID", "Activity_Label") 					#assigns column names to the columns in activities_label.txt file<br />
-###Combining Merged Sets
+COMBINE MERGED SETS
 x<-names(dataMergeX)								#selects column names from X dataset<br />
 y<-grep("std|mean", x)								#finds column names containing mean or std<br />
 dataMergeX<-dataMergeX[,y]							#subsets data for only those columns that contain mean or std values<br />
 dataCombined<-cbind(dataMergeSub, dataMergeY, dataMergeX)			#combines data sets for subject, activities,and results<br />
-###Labels
+LABELS
 dataTogether<-merge(AL,dataCombined, by ="Activity_ID", all.x = T) 		#merges to assign labels<br />
-###Reshaping Data
+RESHAPE DATA
 install.packages(reshape2)<br />
 library(reshape2)<br />
 dataMelt<-melt(dataTogether, id=c("Subject", "Activity_Label"))			# creates longer table<br />
 tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean) #TIDY DATA<br />
-###Produce Dataset
+###Compile
+PRODUCE DATASET
 write.table(tidyData, "tidyData.txt")						# exports dataset as a text file<br />
