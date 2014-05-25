@@ -38,14 +38,16 @@ names(dataMergeY)<-"Activity_ID" 						#assigns a column name for activities<br 
 names(dataMergeSub)<-"Subject" 							#assigns a column name for participants as Subject <br />
 names(AL)<-c("Activity_ID", "Activity_Label") 					#assigns column names to the columns in activities_label.txt file<br />
 ###Combining Merged Sets
-dataCombined<-cbind(dataMergeSub, dataMergeY, dataMergeX) 			#combines all merged datasets<br />
+x<-names(dataMergeX)								#selects column names from X dataset<br />
+y<-grep("std|mean", x)								#finds column names containing mean or std<br />
+dataMergeX<-dataMergeX[,y]							#subsets data for only those columns that contain mean or std values<br />
+dataCombined<-cbind(dataMergeSub, dataMergeY, dataMergeX)			#combines data sets for subject, activities,and results<br />
 ###Labels
 dataTogether<-merge(AL,dataCombined, by ="Activity_ID", all.x = T) 		#merges to assign labels<br />
 ###Reshaping Data
 install.packages(reshape2)<br />
 library(reshape2)<br />
-tidy<-dataTogether[,1:9] 							# subset of data for activity, subject, mean, and SD (first 9 columns)<br />
-dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))				# creates longer table<br />
+dataMelt<-melt(dataTogether, id=c("Subject", "Activity_Label"))			# creates longer table<br />
 tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean) #TIDY DATA<br />
 ###Produce Dataset
-write.table(tidyData, "tidyData.txt")						# exports dataset as a text file
+write.table(tidyData, "tidyData.txt")						# exports dataset as a text file<br />

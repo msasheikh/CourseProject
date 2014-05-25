@@ -74,3 +74,149 @@ Standard Deviation values for x axial signal        <br />
 Standard Deviation values for y axial signal        <br />
 ###tBodyAcc-std()-Z  [9]          <br />
 Standard Deviation values for z axial signal        <br />
+###tGravityAcc-mean()-X [10]<br />
+mean values for x gravity signal                      <br />
+###tGravityAcc-mean()-Y [11]<br />
+mean values for y gravity signal                      <br />
+###tGravityAcc-mean()-Z [12]<br />
+mean values for z gravity signal                      <br />
+###tGravityAcc-std()-X  [13]  <br />          
+Standard Deviation values for x gravity signal        <br />
+###tGravityAcc-std()-Y [14]<br />
+Standard Deviation values for y gravity signal        <br />
+###tGravityAcc-std()-Z [15]    <br />        
+Standard Deviation values for z gravity signal        <br />
+###tBodyAccJerk-mean()-X [16]<br />
+mean values for x jerk signal                      <br />
+###tBodyAccJerk-mean()-Y [17]  <br />        
+mean values for y jerk signal                      <br />
+###tBodyAccJerk-mean()-Z [18]<br />
+mean values for y jerk signal                      <br />
+###tBodyAccJerk-std()-X [19]<br />
+Standard Deviation values for x jerk signal        <br />
+###tBodyAccJerk-std()-Y [20]<br />
+Standard Deviation values for y jerk signal        <br />
+###tBodyAccJerk-std()-Z [21]   <br />        
+Standard Deviation values for z jerk signal        <br />
+###tBodyGyro-mean()-X [22]<br />
+mean values for x gyro signal                      <br />
+###tBodyGyro-mean()-Y [23]     <br />        
+mean values for y gyro signal                      <br />
+###tBodyGyro-mean()-Z [24]<br />
+mean values for z gyro signal                      <br />
+###tBodyGyro-std()-X [25]        <br />      
+Standard Deviation values for x gyro signal        <br />
+###tBodyGyro-std()-Y [26]<br />
+Standard Deviation values for y gyro signal        <br />
+###tBodyGyro-std()-Z [27]<br />
+Standard Deviation values for z gyro signal        <br />
+###tBodyGyroJerk-mean()-X [28]<br />
+mean values for x gyro jerk signal                      <br />
+###tBodyGyroJerk-mean()-Y [29]     <br />    
+mean values for y gyro jerk signal                      <br />
+###tBodyGyroJerk-mean()-Z [30]<br />
+mean values for z gyro jerk signal                      <br />
+###tBodyGyroJerk-std()-X [31]    <br />      
+Standard Deviation values for x gyro jerk signal        <br />
+###tBodyGyroJerk-std()-Y [32]<br />
+Standard Deviation values for y gyro jerk signal        <br />
+###tBodyGyroJerk-std()-Z [33]   <br />       
+Standard Deviation values for z gyro jerk signal        <br />
+###tBodyAccMag-mean() [34]<br />
+mean values for body acc signal                      <br />
+###tBodyAccMag-std() [35]      <br />        
+Standard Deviation values for body acc signal        <br />
+###tGravityAccMag-mean()[36]<br />
+mean values for gravity acc signal                      <br />
+###tGravityAccMag-std() [37]     <br />      
+Standard Deviation values for gravity acc signal        <br />
+###tBodyAccJerkMag-mean()[38]<br />
+mean values for body acc jerk signal                      <br />
+###tBodyAccJerkMag-std() [39]   <br />       
+Standard Deviation values for body acc jerk signal        <br />
+###tBodyGyroMag-mean() [40]<br />
+mean values for body gyro signal                      <br />
+###tBodyGyroMag-std() [41]       <br />      
+Standard Deviation values for body gyro signal        <br />
+###tBodyGyroJerkMag-mean() [42]<br />
+mean values for body gyro jerk signal                      <br />
+###tBodyGyroJerkMag-std() [43]  <br />       
+Standard Deviation values for body gyro jerk signal        <br />
+###fBodyAcc-mean()-X [44]     <br />          
+mean values for x body acc signal                      <br />
+###fBodyAcc-mean()-Y [45]    <br />          
+mean values for y body acc signal                      <br />
+###fBodyAcc-mean()-Z [46]<br />
+mean values for z body acc signal                      <br />
+###fBodyAcc-std()-X [47]               <br />
+Standard Deviation values for x body acc signal        <br />
+###fBodyAcc-std()-Y [48]<br />
+Standard Deviation values for y body acc signal        <br />
+###fBodyAcc-std()-Z [49]<br />
+Standard Deviation values for z body acc signal        <br />
+###fBodyAcc-meanFreq()-X [50]<br />
+meanFreq values for x axial signal                      <br />
+###fBodyAcc-meanFreq()-Y [51]<br />
+meanFreq values for y axial signal                      <br />
+###fBodyAcc-meanFreq()-Z [52]<br />
+meanFreq values for z axial signal                      <br />
+###fBodyAccJerk-mean()-X [53]  <br />        
+mean values for x acc jerk signal                      <br />
+###fBodyAccJerk-mean()-Y [54]<br />
+mean values for y acc jerk signal                      <br />
+###fBodyAccJerk-mean()-Z [55]  <br />        
+mean values for z acc jerk signal                      <br />
+###fBodyAccJerk-std()-X [56]<br />
+Standard Deviation values for x acc jerk signal        <br />
+###fBodyAccJerk-std()-Y [57]    <br />       
+Standard Deviation values for y acc jerk signal        <br />
+###fBodyAccJerk-std()-Z [58]<br />
+Standard Deviation values for z acc jerk signal        <br />
+###fBodyAccJerk-meanFreq()-X [59] <br />     
+meanFreq values for x axial signal                      <br />
+###fBodyAccJerk-meanFreq()-Y[60]<br />
+meanFreq values for y axial signal                      <br />
+###fBodyAccJerk-meanFreq()-Z [61] <br />     
+meanFreq values for z axial signal                      <br />
+###fBodyGyro-mean()-X [62]<br />
+mean values for x fbody gyro axial signal                      <br />
+###fBodyGyro-mean()-Y [63]        <br />     
+mean values for y fbody gyro axial signal                      <br />
+###fBodyGyro-mean()-Z [64]<br />
+mean values for z fbody gyro axial signal                      <br />
+###fBodyGyro-std()-X [65]    <br />          
+Standard Deviation values for x fbody gyro axial signal        <br />
+###fBodyGyro-std()-Y [66]<br />
+Standard Deviation values for y fbody gyro axial signal        <br />
+###fBodyGyro-std()-Z [67]      <br />        
+Standard Deviation values for z fbody gyro axial signal        <br />
+###fBodyGyro-meanFreq()-X [68]<br />
+meanFreq values for x axial signal                      <br />
+###fBodyGyro-meanFreq()-Y [69]  <br />       
+meanFreq values for y axial signal                      <br />
+###fBodyGyro-meanFreq()-Z [70]<br />
+meanFreq values for z axial signal                      <br />
+###fBodyAccMag-mean() [71]     <br />        
+mean values for fbody acc axial signal                      <br />
+###fBodyAccMag-std() [72]<br />
+Standard Deviation values for fbody acc axial signal        <br />
+###fBodyAccMag-meanFreq() [73]     <br />    
+meanFreq values for fbody acc axial signal                      <br />
+###fBodyBodyAccJerkMag-mean() [74]<br />
+mean values for fbody jerk axial signal                      <br />
+###fBodyBodyAccJerkMag-std() [75]   <br />   
+Standard Deviation values for fbody jerk axial signal        <br />
+###fBodyBodyAccJerkMag-meanFreq()[76] <br /> 
+meanFreq values for f body jerk mag axial signal                      <br />
+###fBodyBodyGyroMag-mean() [77]   <br />     
+mean values for fbody gyro mag axial signal                      <br />
+###fBodyBodyGyroMag-std() [78]<br />
+Standard Deviation values for fbody gyro mag axial signal        <br />
+###fBodyBodyGyroMag-meanFreq() [79]    <br />
+meanFreq values for fbody gyro mag axial signal                      <br />
+###fBodyBodyGyroJerkMag-mean() [80]<br />
+mean values for fbody gyro jerk mag axial signal                      <br />
+###fBodyBodyGyroJerkMag-std() [81]    <br /> 
+Standard Deviation values for fbody gyro jerk mag axial signal        <br />
+###fBodyBodyGyroJerkMag-meanFreq() [82]<br />
+meanFreq values for fbody gyro jerk mag axial signal                      <br />

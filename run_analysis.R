@@ -39,6 +39,9 @@ names(dataMergeSub)<-"Subject"
 names(AL)<-c("Activity_ID", "Activity_Label")
 
 #Combining Merged Sets
+x<-names(dataMergeX)
+y<-grep("std|mean", x)
+dataMergeX<-dataMergeX[,y]
 dataCombined<-cbind(dataMergeSub, dataMergeY, dataMergeX)
 
 #Labels
@@ -47,8 +50,7 @@ dataTogether<-merge(AL,dataCombined, by ="Activity_ID", all.x = T) # merge to as
 #Reshaping Data
 install.packages(reshape2)
 library(reshape2)
-tidy<-dataTogether[,1:9]
-dataMelt<-melt(tidy, id=c("Subject", "Activity_Label"))
+dataMelt<-melt(dataTogether, id=c("Subject", "Activity_Label"))
 tidyData<-dcast(dataMelt, Subject + Activity_Label ~ variable, fun.aggregate=mean)
 
 #Produce Dataset
