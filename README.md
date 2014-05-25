@@ -1,6 +1,8 @@
 CourseProject
 =============
 JHU Data Science Course Project - Getting and Cleaning Data
+
+This file breaks down code into three steps: extract, transform, and compile. Additionally, each code line is accompanied by a text, describing the purpose of the code.
 ###Loading and Preparing Files
 setwd("C:/Users/S S/Dropbox/Cousera/Getting and Cleaning Data/")<br />
 
